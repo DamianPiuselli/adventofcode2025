@@ -23,6 +23,7 @@ from collections import defaultdict
 network = defaultdict(list)  # map id (int) to list of connected coords
 next_id = 0
 
+# iter over first 1000 for part 1, over all for part 2.
 for (coord1, coord2), distance in paired_list:
     # for part2
     network_current_values = [val for sublist in network.values() for val in sublist]
